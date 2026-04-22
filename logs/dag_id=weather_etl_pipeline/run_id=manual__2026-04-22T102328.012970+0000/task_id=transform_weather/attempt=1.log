@@ -1,0 +1,14 @@
+[2026-04-22T10:30:19.079+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_etl_pipeline.transform_weather manual__2026-04-22T10:23:28.012970+00:00 [queued]>
+[2026-04-22T10:30:19.089+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_etl_pipeline.transform_weather manual__2026-04-22T10:23:28.012970+00:00 [queued]>
+[2026-04-22T10:30:19.090+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-04-22T10:30:19.105+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_weather> on 2026-04-22 10:23:28.012970+00:00
+[2026-04-22T10:30:19.113+0000] {standard_task_runner.py:60} INFO - Started process 319 to run task
+[2026-04-22T10:30:19.117+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_etl_pipeline', 'transform_weather', 'manual__2026-04-22T10:23:28.012970+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/weather_etl_dag.py', '--cfg-path', '/tmp/tmpkjfn_ess']
+[2026-04-22T10:30:19.119+0000] {standard_task_runner.py:88} INFO - Job 67: Subtask transform_weather
+[2026-04-22T10:30:19.186+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_etl_pipeline.transform_weather manual__2026-04-22T10:23:28.012970+00:00 [running]> on host c89e6e271c48
+[2026-04-22T10:30:19.293+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='weather_pipeline' AIRFLOW_CTX_DAG_ID='weather_etl_pipeline' AIRFLOW_CTX_TASK_ID='transform_weather' AIRFLOW_CTX_EXECUTION_DATE='2026-04-22T10:23:28.012970+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-22T10:23:28.012970+00:00'
+[2026-04-22T10:30:19.308+0000] {transform.py:87} WARNING - No raw records to transform
+[2026-04-22T10:30:19.328+0000] {python.py:201} INFO - Done. Returned value was: []
+[2026-04-22T10:30:19.360+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=weather_etl_pipeline, task_id=transform_weather, execution_date=20260422T102328, start_date=20260422T103019, end_date=20260422T103019
+[2026-04-22T10:30:19.414+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-04-22T10:30:19.446+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

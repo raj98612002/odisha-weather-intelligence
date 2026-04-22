@@ -1,0 +1,1 @@
+[2026-04-21T17:53:08.719+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: weather_etl_pipeline.extract_from_kafka scheduled__2026-04-21T17:30:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
